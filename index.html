@@ -5,9 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tunify</title>
-    <link rel="style" href="style.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" href="Images/tunify.png"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
+    <!--Loader-->
+    <div class="load">
+        <div class="loader"></div>
+        <div class="loader"></div>
+        <div class="loader"></div>
+    </div>
+
+    <!--Nav Bar-->
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Explore</a></li>
+            <li><a href="">Library</a></li>
+            <li><a href="">Your Playlist</a></li>
+        </ul>
+    </nav>
+
+    <section class="container">
+        <form action="">
+            <input type="text" name="" id="search-item" placeholder="Search" onkeyup="search()">
+        </form>
+    </section>
+
+    <section class="type">
+        <ul>
+            <li><button>All</button></li>
+            <li><button>Artist</button></li>
+            <li><button>Song</button></li>
+            <li><button>Playlist</button></li>
+            <li><button>Album</button></li>
+        </ul>
+    </section>
+
+    <section id="search-list">
+        <div class="card">
+            <img src="Images/Artist/lildurk.jfif" alt="">
+            <h2>Lil Durk</h2>
+        </div>
+        <div class="card">
+            <img src="Images/Artist/centralcee.jfif" alt="">
+            <h2>Central Cee</h2>
+        </div>
+        <div class="card">
+            <img src="Images/Artist/lilbaby.jfif" alt="">
+            <h2>Lil Baby</h2>
+        </div>
+        <div class="card">
+            <img src="Images/Artist/kingvon.jfif" alt="">
+            <h2>King Von</h2>
+        </div>
+        <div class="card">
+            <img src="Images/Artist/ajshabeel.jfif" alt="">
+            <h2>Aj Shabeel</h2>
+        </div>
+    </section>
     
     <script src="script.js"></script>
 </body>
