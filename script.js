@@ -8,6 +8,7 @@ tr = document.getElementById("tr"),
 img = document.getElementById("img"),
 card = document.querySelectorAll(".card"),
 icn = document.querySelectorAll(".icn"),
+hie = document.querySelectorAll("h2"),
 currentIndex = 0;
 pname = artistlist.getElementsByTagName("h2");
 
@@ -16,7 +17,6 @@ function search(){
     const storeitem = document.getElementById("artist-list");
     const card = document.querySelectorAll(".card");
     const pname = storeitem.getElementsByTagName("h2");
-
     for(i=0; i < pname.length; i++){
         let match = card[i].getElementsByTagName("h2")[0]
 
@@ -35,7 +35,6 @@ window.addEventListener('load', () => {
     load.style.display = 'none'
     //loader.style.display = 'none'
 });
-
 
 let recentSearches = [];
     
@@ -58,28 +57,22 @@ artists.onclick = () => {
   artistlist.classList.toggle("none")
 }
 
-/*function sing(){
-  let currentIndex = 0
-  player.src = durkioo[currentIndex]
-}
-
-sing()*/
-
 card.forEach(function(card) {
   card.onmouseover = () => {
      // icn.classList.remove("none")
   }
-  card.onclick = () => {
-    let hi = [pname]
-    console.log(hi)
-    for(i = 0; i < pname.length; i++){
-      console.log(pname[i])
+  card.onclick = (e) => {
+    if(e.target.innerText.includes('Lil Durk')){
+      img.src = durkioo[currentIndex].img;
+      art.textContent = durkioo[currentIndex].ar
+      tr.textContent = durkioo[currentIndex].track
+      player.src = durkioo[currentIndex].song
+    } else if(e.target.innerText.includes('King Von')){
+      img.src = von[currentIndex].img;
+      art.textContent = von[currentIndex].ar
+      tr.textContent = von[currentIndex].track
+      player.src = von[currentIndex].song
     }
-    img.src = durkioo[currentIndex].img;
-    art.textContent = durkioo[currentIndex].ar
-    tr.textContent = durkioo[currentIndex].track
-    player.src = durkioo[currentIndex].song
-    //player.load()
   }
 });
 
