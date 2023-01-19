@@ -6,6 +6,7 @@ player = document.getElementById("player"),
 art = document.getElementById("art"),
 tr = document.getElementById("tr"),
 img = document.getElementById("img"),
+nm = document.getElementById("nm"),
 card = document.querySelectorAll(".card"),
 icn = document.querySelectorAll(".icn"),
 hie = document.querySelectorAll("h2"),
@@ -67,11 +68,18 @@ card.forEach(function(card) {
       art.textContent = durkioo[currentIndex].ar
       tr.textContent = durkioo[currentIndex].track
       player.src = durkioo[currentIndex].song
+      nm.innerText = (currentIndex + 1) + " of " + durkioo.length;
     } else if(e.target.innerText.includes('King Von')){
       img.src = von[currentIndex].img;
       art.textContent = von[currentIndex].ar
       tr.textContent = von[currentIndex].track
       player.src = von[currentIndex].song
+    }
+    else if(e.target.innerText.includes('Aj Shabeel')){
+      img.src = aj[currentIndex].img;
+      art.textContent = aj[currentIndex].ar
+      tr.textContent = aj[currentIndex].track
+      player.src = aj[currentIndex].song
     }
   }
 });
@@ -82,12 +90,6 @@ function play() {
   } else{
     player.pause()
   }
-  //player.play();
-  //player.src = durkioo[currentIndex]
-}
-
-function pause() {
-  player.pause();
 }
 
 function prev() {

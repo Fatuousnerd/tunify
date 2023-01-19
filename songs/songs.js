@@ -79,7 +79,7 @@ const von = [
 
 const aj = [
     {
-        img: 'Images/Artist/lildurk.jfif',
+        img: 'Images/Artist/ajshabeel.jfif',
         ar: 'Lil Durk, Only The Family',
         track: 'Hellcats And Trackhawks',
         song: 'songs/Only The Family  Lil Durk  Hellcats  Trackhawks.mp3'
