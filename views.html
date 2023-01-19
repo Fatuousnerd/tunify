@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Video View Counter</title>
+  </head>
+  <body>
+    <video id="myVideo" controls>
+      <source src="Hellcats.mp4" type="video/mp4">
+    </video>
+    <p>Views: <span id="views">0</span></p>
+    <script>
+      var video = document.getElementById("myVideo");
+      var views = document.getElementById("views");
+      var viewCount = 0;
+      
+      video.addEventListener("ended", function() {
+        console.log("View")
+        viewCount++;
+        views.innerHTML = viewCount;
+      });
+
+      console.dir(video)
+    </script>
+  </body>
+</html>

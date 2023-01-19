@@ -36,36 +36,97 @@
     <section class="type">
         <ul>
             <li><button>All</button></li>
-            <li><button>Artist</button></li>
-            <li><button>Song</button></li>
+            <li><button id="artists">Artist</button></li>
+            <li><button>Songs</button></li>
             <li><button>Playlist</button></li>
             <li><button>Album</button></li>
         </ul>
     </section>
 
-    <section id="search-list">
+    <div id="audio_player">
+        <div class="bt">
+            <button onclick="prev()"><i class="material-symbols-outlined">skip_previous</i></button>
+            <button><i class="material-symbols-outlined">repeat</i></button>
+            <button onclick="play()"><i class="material-symbols-outlined" onclick="play()">play_arrow</i></button>
+            <button><i class="material-symbols-outlined">shuffle</i></button>
+            <button onclick="next()"><i class="material-symbols-outlined">skip_next</i></button>
+        </div>
+        <div class="cnl">
+            <img src="Images/tunify.png" id="img" alt="">
+            <div class="txt">
+                <h6 id="art">Artist</h6>
+                <p id="tr">Track</p>
+            </div>
+        </div>
+        <audio id="player" controls>
+            <source >
+        </audio>
+    </div>
+
+    <section id="artist-list" class="artist-list">
         <div class="card">
             <img src="Images/Artist/lildurk.jfif" alt="">
             <h2>Lil Durk</h2>
+            <span>Followers</span>
+            <span class="icn none"><i class="material-symbols-outlined">play_circle</i></span>
         </div>
         <div class="card">
             <img src="Images/Artist/centralcee.jfif" alt="">
             <h2>Central Cee</h2>
+            <span>Followers</span>
+            <span class="icn none"><i class="material-symbols-outlined">play_circle</i></span>
         </div>
         <div class="card">
             <img src="Images/Artist/lilbaby.jfif" alt="">
             <h2>Lil Baby</h2>
+            <span>Followers</span>
+            <span class="icn none"><i class="material-symbols-outlined">play_circle</i></span>
         </div>
         <div class="card">
             <img src="Images/Artist/kingvon.jfif" alt="">
             <h2>King Von</h2>
+            <span>Followers</span>
+            <span class="icn none"><i class="material-symbols-outlined">play_circle</i></span>
         </div>
         <div class="card">
             <img src="Images/Artist/ajshabeel.jfif" alt="">
             <h2>Aj Shabeel</h2>
+            <span>Followers</span>
+            <span class="icn none"><i class="material-symbols-outlined">play_circle</i></span>
+        </div>
+        <div class="card">
+            <img src="Images/Artist/ajshabeel.jfif" alt="">
+            <h2>Chunkz</h2>
+            <span>Followers</span>
+            <span class="icn none"><i class="material-symbols-outlined">play_circle</i></span>
+        </div>
+        <div class="card">
+            <img src="Images/Artist/ajshabeel.jfif" alt="">
+            <h2>Yung Filly</h2>
+            <span>Followers</span>
+            <span class="icn none"><i class="material-symbols-outlined">play_circle</i></span>
+        </div>
+        <div class="card">
+            <img src="Images/Artist/ajshabeel.jfif" alt="">
+            <h2>Lil Zay Osama</h2>
+            <span>Followers</span>
+            <span class="icn none"><i class="material-symbols-outlined">play_circle</i></span>
+        </div>
+        <div class="card">
+            <img src="Images/Artist/ajshabeel.jfif" alt="">
+            <h2>Stormzy</h2>
+            <span>Followers</span>
+            <span class="icn none"><i class="material-symbols-outlined">play_circle</i></span>
+        </div>
+        <div class="card">
+            <img src="Images/Artist/ajshabeel.jfif" alt="">
+            <h2>Dave</h2>
+            <span>Followers</span>
+            <span class="icn none"><i class="material-symbols-outlined">play_circle</i></span>
         </div>
     </section>
     
     <script src="script.js"></script>
+    <script src="songs/songs.js"></script>
 </body>
 </html>

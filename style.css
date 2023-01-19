@@ -19,6 +19,9 @@ nav{
     border: .1px solid #fff;
     position: relative fixed;
 }
+nav ul{
+    position: fixed;
+}
 nav li{
     margin: 25px;
     padding: 10px;
@@ -29,7 +32,7 @@ nav a{
     color: #fff;
 }
 .container{
-    width: 100%;
+    width: calc(100% - 5px);
     height: 100px;
     background: #454545;
     border-radius: 15px;
@@ -76,34 +79,120 @@ button{
     outline: none;
     border-radius: 10px;
 }
-#search-list{
+#audio_player{
+    width: calc(100% - 10px);
+    height: 13%;
+    padding: 10px;
+    position: fixed;
+    bottom: 5px;
+    z-index: 99;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(20px);
+}
+.bt{
+    width: 25%;
+    height: auto;
+    padding: 5px;
+    z-index: 9999;
+    position: relative;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(0);
+    border-radius: 10px;
+    top: 0;
+    left: 40%;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+.bt button{
+    margin: 0;
+}
+.cnl{
+    width: auto;
+    height: auto;
+    padding: 5px;
+    background: rgba(5, 5, 5, 0.5);
+    z-index: 100;
+    position: absolute;
+    top: 5%;
+    display: flex;
+    border-radius: 5px;
+}
+.cnl img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    animation: spin infinite 5s;
+}
+@keyframes spin{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+.txt{
+    margin-left: 20px;
+    align-items: stretch;
+    text-align: center;
+    justify-content: space-around;
+    line-height: 20px;
+}
+audio{
+    position: fixed;
+    bottom: 5px;
+    z-index: 5;
+    width: calc(100% - 10px);
+}
+.artist-list{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     position: absolute;
-    width: calc(100% - 16.5vw);
-    height: 300px;
+    width: calc(100% - 17.5vw);
+    height: 90vw;
     background: #191919;
     left: 16.65vw;
     top: calc(0% + 150px);
     padding: 10px;
     border-radius: 5px;
 }
+.none{
+    display: none;
+}
 .card{
     width: calc(100% / 4.5);
-    height: calc(100%);
-    background: #898989;
+    height: calc(100% / 5);
+    background: rgba(0, 0, 0, 0.8);
     margin-left: 15px;
     border-radius: 10px;
     padding: 5px;
     text-align: center;
     justify-content: center;
     align-items: center;    
-    cursor: pointer;
+    cursor: default;
 }
 .card img{
     width: 200px;
     height: 200px;
     border-radius: 50%;
+}
+.card i{
+    color: rgb(0, 255, 5);
+    background: transparent;
+    font-size: 500%;
+}
+.icn{
+    position: absolute;
+    justify-content: right;
+    margin-right: 0;
+    margin-left: calc(-13.5%);
+    margin-top: calc(1.25%);
+    visibility: initial;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 500,
+  'GRAD' 200,
+  'opsz' 48
 }
 .load{
     display: flex;
@@ -124,15 +213,13 @@ button{
 @keyframes load {
     25%{transform: scaleY(.5);}
     50%{transform: scaleY(5);}
-    75%{transform: scaleY(.5);}
-    100%{transform: scaleY(5);}
 }
 .loader:nth-child(1){
     animation-delay: 0s;
 }
 .loader:nth-child(2){
-    animation-delay: .5s;
+    animation-delay: .25s;
 }
 .loader:nth-child(3){
-    animation-delay: 0;
+    animation-delay: 0.5s;
 }
