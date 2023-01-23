@@ -187,12 +187,16 @@ audio{
     text-align: center;
     justify-content: center;
     align-items: center;    
-    cursor: default;
+    cursor: pointer;
 }
+.card:hover{
+    transform: scale(1.025);
+    box-shadow: 1px 3px 15px 10px #000;}
 .card img{
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    object-fit: cover;
 }
 .card i{
     color: rgb(0, 255, 5);
