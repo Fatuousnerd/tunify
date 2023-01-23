@@ -26,16 +26,34 @@ nav li{
     margin: 25px;
     padding: 10px;
     list-style: none;
+    background: #101010;
+    min-width: 90%;
+    width: auto;
+    word-wrap: none;
+    border-radius: 10px;
+    text-align: left;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+nav li:hover{
+    background: #aaa;
 }
 nav a{
+    min-width: 100%;
     text-decoration: none;
     color: #fff;
+}
+nav a i{
+    margin-top: auto;
+    margin-bottom: 0;
+    margin-right: calc(5%);
 }
 .container{
     width: calc(100% - 5px);
     height: 100px;
     background: #454545;
-    border-radius: 15px;
+    border-radius: 05px;
     padding: 20px;
     position: relative;
 }
@@ -80,7 +98,7 @@ button{
     border-radius: 10px;
 }
 #audio_player{
-    width: calc(100% - 10px);
+    width: calc(100% - 01px);
     height: 14%;
     border-radius: 5px;
     padding: 10px;
@@ -150,7 +168,7 @@ audio{
     position: absolute;
     width: calc(100% - 17.5vw);
     height: 90vw;
-    background: #191919;
+    background: #242424;
     left: 16.65vw;
     top: calc(0% + 150px);
     padding: 10px;
@@ -162,7 +180,7 @@ audio{
 .card{
     width: calc(100% / 4.5);
     height: calc(100% / 5);
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.5);
     margin-left: 15px;
     border-radius: 10px;
     padding: 5px;

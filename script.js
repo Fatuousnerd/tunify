@@ -80,6 +80,11 @@ card.forEach(function(card) {
       art.textContent = aj[currentIndex].ar
       tr.textContent = aj[currentIndex].track
       player.src = aj[currentIndex].song
+    } else {
+      img.src = "Images/tunify.png";
+      art.textContent = "Artist"
+      tr.textContent = "Track"
+      player.src = ""
     }
   }
 });
@@ -108,3 +113,4 @@ function next() {
   }
   player.src = durkioo[currentIndex];
 }
+
