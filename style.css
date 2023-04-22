@@ -134,8 +134,8 @@ button{
     font-size: larger;
 }
 .cnl{
-    width: auto;
-    height: 90%;
+    width: 100%;
+    height: 98%;
     max-height: 85%;
     padding: 5px;
     background: rgba(5, 5, 5, 0.8);
@@ -167,6 +167,18 @@ audio{
     bottom: 5px;
     z-index: 5;
     width: calc(100% - 10px);
+}
+.btns{
+    margin-left: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    position: fixed;
+    left: 40%;
+    border-radius: 10px;
+    padding-right: 15px;
+}
+.btns button:hover{
+    color: green;
+    transform: scale(1.25);
 }
 .artist-list{
     display: flex;
@@ -217,6 +229,11 @@ audio{
     margin-left: calc(-13.5%);
     margin-top: calc(1.25%);
     visibility: initial;
+}
+.more_vert i{
+    font-size: large;
+    margin: 5px;
+    margin-left: 15px;
 }
 .material-symbols-outlined {
   font-variation-settings:
