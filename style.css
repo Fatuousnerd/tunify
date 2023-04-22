@@ -103,33 +103,40 @@ button{
     border-radius: 5px;
     padding: 10px;
     position: fixed;
-    bottom: 5px;
+    bottom: 0px;
     z-index: 99;
-    background: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(20px);
+    background: rgba(0, 0, 0, 0.8);
+    /*backdrop-filter: blur(10px);*/
 }
-.bt{
-    width: 25%;
-    height: auto;
-    padding: 5px;
-    z-index: 9999;
-    position: relative;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(0);
-    border-radius: 10px;
-    top: 0;
-    left: 40%;
-    align-items: center;
-    justify-content: space-around;
-    text-align: center;
+.brs{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
 }
-.bt button{
-    margin: 0;
+.br{
+    width: calc(005% / 4);
+    height: 25%;
+    color: #fff;
+    background: #fff;
+    z-index: 99999;
+    margin-left: 5px;
+    animation: rise linear infinite 2s ;
+}
+@keyframes rise{
+    from{transform: scaleY(1);}
+    to{transform: scaleY(1.5);}
+}
+.cnl button{
+    margin: 5;
+    background: transparent;
+    color: #fff;
+    font-size: larger;
 }
 .cnl{
     width: auto;
-    height: auto;
-    height: auto;
+    height: 90%;
+    max-height: 85%;
     padding: 5px;
     background: rgba(5, 5, 5, 0.8);
     z-index: 100;
@@ -150,9 +157,9 @@ button{
 }
 .txt{
     margin-left: 20px;
-    align-items: stretch;
+    align-items: center;
     text-align: center;
-    justify-content: space-around;
+    justify-content: top;
     line-height: 20px;
 }
 audio{
@@ -179,7 +186,7 @@ audio{
 }
 .card{
     width: calc(100% / 4.5);
-    height: calc(100% / 5);
+    height: calc(110% / 5);
     background: rgba(0, 0, 0, 0.5);
     margin-left: 15px;
     border-radius: 10px;

@@ -22,7 +22,7 @@
     <nav>
         <ul>
             <li><a href=""><i class="material-symbols-rounded">home</i>Home</a></li>
-            <li><a href=""><i class="material-symbols-outlined">search</i>Explore</a></li>
+            <li><a href=""><i class="material-symbols-outlined">search</i>Search</a></li>
             <li><a href=""><i class="material-symbols-outlined">library_music</i>Library</a></li>
             <li><a href=""><i class="material-symbols-outlined">queue_music</i>Your Playlist</a></li>
         </ul>
@@ -45,13 +45,6 @@
     </section>
 
     <div id="audio_player">
-        <div class="bt">
-            <button onclick="prev()"><i class="material-symbols-rounded">skip_previous</i></button>
-            <button><i class="material-symbols-rounded">repeat</i></button>
-            <button onclick="play()"><i class="material-symbols-rounded" onclick="play()">play_circle</i></button>
-            <button><i class="material-symbols-rounded">shuffle</i></button>
-            <button onclick="next()"><i class="material-symbols-rounded">skip_next</i></button>
-        </div>
         <div class="cnl">
             <img src="Images/tunify.png" id="img" alt="">
             <div class="txt">
@@ -59,8 +52,21 @@
                 <p id="tr">Track</p>
                 <h6 id="nm">0 of 0</h6>
             </div>
+            <button onclick="prev()"><i class="material-symbols-rounded">skip_previous</i></button>
+            <button><i class="material-symbols-rounded">repeat</i></button>
+            <button onclick="play()"><i class="material-symbols-rounded" onclick="play()">play_circle</i></button>
+            <button><i class="material-symbols-rounded">shuffle</i></button>
+            <button onclick="next()"><i class="material-symbols-rounded">skip_next</i></button>
         </div>
-        <audio id="player" controls>
+        <!--<div class="brs">
+            <div class="br"></div>
+            <div class="br"></div>
+            <div class="br"></div>
+            <div class="br"></div>
+            <div class="br"></div>
+            <div class="br"></div>
+        </div>-->
+        <audio id="player">
             <source >
         </audio>
     </div>
