@@ -141,20 +141,11 @@ button{
     background: rgba(5, 5, 5, 0.8);
     z-index: 100;
     position: absolute;
-    top: 2%;
+    top: 0%;
     display: flex;
     border-radius: 5px;
 }
-.cnl img{
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    animation: spin infinite 5s;
-}
-@keyframes spin{
-    from{transform: rotate(0deg);}
-    to{transform: rotate(360deg);}
-}
+
 .txt{
     margin-left: 20px;
     align-items: center;
@@ -185,7 +176,7 @@ audio{
     flex-direction: row;
     flex-wrap: wrap;
     position: absolute;
-    width: calc(100% - 17.5vw);
+    width: calc(100% - 2(17.5vw));
     height: 90vw;
     background: #242424;
     left: 16.65vw;
@@ -197,7 +188,7 @@ audio{
     display: none;
 }
 .card{
-    width: calc(100% / 4.5);
+    width: calc(100% / 2(4.5));
     height: calc(110% / 5);
     background: rgba(0, 0, 0, 0.5);
     margin-left: 15px;
@@ -277,4 +268,29 @@ audio{
 }
 .loader:nth-child(3){
     animation-delay: 0.5s;
+}
+.ms{
+    position: absolute;
+    width: 20vw;
+    height: 200px;
+    top: 80%;
+    background: rgba(255, 255, 255, 0.1);
+}
+.ms img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    animation: spin infinite 5s;
+}
+@keyframes spin{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+.sign{
+    position: absolute;
+    left: 90%;
+}
+.sign a{
+    color: #fff;
+    text-decoration: none;
 }
