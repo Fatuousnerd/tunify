@@ -294,3 +294,6 @@ audio{
     color: #fff;
     text-decoration: none;
 }
+.sign a:hover{
+    transform: scale(1.05);
+}

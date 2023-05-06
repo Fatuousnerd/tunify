@@ -1,4 +1,4 @@
-var name = document.getElementById("name");
+var sign = document.getElementById("sign");
 
 //Check if the username session variable is set
 if ('<?php echo isset($_SESSION["username"]); ?>' === '1') {
@@ -13,7 +13,7 @@ const username = urlParams.get('username');
 // If the username parameter is set, display a personalized welcome message
 if (username) {
   console.log('Welcome, ' + username + '!');
-  name.innerHTML = `<p>Welcome, ${username}</p>`;
-} else{
+  sign.innerHTML = `<button>${username}</button>`;
+} /*else{
     name.innerHTML = `<p>Sign in</p>`;
-}
+}*/
