@@ -24,7 +24,7 @@ if (isset($_SESSION["user_id"])){
 
     
 } else {
-  header('Location: indeex.html');
+  header('Location: index.html');
 }
 
 // Start a session to access session variables
