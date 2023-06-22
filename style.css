@@ -5,295 +5,194 @@
     box-sizing: border-box;
     font-family: 'Unbounded', cursive;
 }
-body{
-    background: #101010;
-    color: #fff;
-    margin: auto;
-    display: flex;
-}
-nav{
-    width: 20vw;
-    height: 100vw;
-    background: #191919;
-    color: #fff;
-    border: .1px solid #fff;
-    position: relative fixed;
-}
-nav ul{
-    position: fixed;
-}
-nav li{
-    margin: 25px;
-    padding: 10px;
-    list-style: none;
-    background: #101010;
-    min-width: 90%;
-    width: auto;
-    word-wrap: none;
-    border-radius: 10px;
-    text-align: left;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-}
-nav li:hover{
-    background: #aaa;
-}
-nav a{
-    min-width: 100%;
-    text-decoration: none;
-    color: #fff;
-}
-nav a i{
-    margin-top: auto;
-    margin-bottom: 0;
-    margin-right: calc(5%);
-}
-.container{
-    width: calc(100% - 5px);
-    height: 100px;
-    background: #454545;
-    border-radius: 05px;
-    padding: 20px;
-    position: relative;
-}
-.container form{
-    width: 100%;
-    height: 90%;
-    top: 50%;
-}
-form input{
-    width: calc(100% - 55px);
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    padding: 5px;
-    top: 50%;
-}
-form input:focus{
-    padding: 10px;
-}
-.type{
-    position: absolute;
-    background: transparent;
-    height: 50px;
-    width: calc(100% - 20vw);
-    top: calc(0% + 100px);
-    right: calc(04.5vw);
-}
-.type ul{
-    display: flex;
-    flex-direction: row;
-}
-li{
-    list-style: none;
-}
-button{
-    padding: 5px;
-    margin-left: 30px;
-    margin-top: 10px;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    border-radius: 10px;
-}
-#audio_player{
-    width: calc(100% - 01px);
-    height: 14%;
-    border-radius: 5px;
-    padding: 10px;
-    position: fixed;
-    bottom: 0px;
-    z-index: 99;
-    background: rgba(0, 0, 0, 0.8);
-    /*backdrop-filter: blur(10px);*/
-}
-.brs{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-}
-.br{
-    width: calc(005% / 4);
-    height: 25%;
-    color: #fff;
-    background: #fff;
-    z-index: 99999;
-    margin-left: 5px;
-    animation: rise linear infinite 2s ;
-}
-@keyframes rise{
-    from{transform: scaleY(1);}
-    to{transform: scaleY(1.5);}
-}
-.cnl button{
-    margin: 5;
-    background: transparent;
-    color: #fff;
-    font-size: larger;
-}
-.cnl{
-    width: 100%;
-    height: 98%;
-    max-height: 85%;
-    padding: 5px;
-    background: rgba(5, 5, 5, 0.8);
-    z-index: 100;
-    position: absolute;
-    top: 0%;
-    display: flex;
-    border-radius: 5px;
-}
-
-.txt{
-    margin-left: 20px;
-    align-items: center;
-    text-align: center;
-    justify-content: top;
-    line-height: 20px;
-}
-audio{
-    position: fixed;
-    bottom: 5px;
-    z-index: 5;
-    width: calc(100% - 10px);
-}
-.btns{
-    margin-left: 20px;
-    background: rgba(255, 255, 255, 0.1);
-    position: fixed;
-    left: 40%;
-    border-radius: 10px;
-    padding-right: 15px;
-}
-.btns button:hover{
-    color: green;
-    transform: scale(1.25);
-}
-.artist-list{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    position: absolute;
-    width: calc(100% - 2(17.5vw));
-    height: 90vw;
-    background: #242424;
-    left: 16.65vw;
-    top: calc(0% + 150px);
-    padding: 10px;
-    border-radius: 5px;
-}
-.none{
-    display: none;
-}
-.card{
-    width: calc(100% / 2(4.5));
-    height: calc(110% / 5);
-    background: rgba(0, 0, 0, 0.5);
-    margin-left: 15px;
-    border-radius: 10px;
-    padding: 5px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;    
-    cursor: pointer;
-}
-.card:hover{
-    transform: scale(1.025);
-    box-shadow: 1px 3px 15px 10px #000;}
-.card img{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-.card i{
-    color: rgb(0, 255, 5);
-    background: transparent;
-    font-size: 500%;
-}
-.icn{
-    position: absolute;
-    justify-content: right;
-    margin-right: 0;
-    margin-left: calc(-13.5%);
-    margin-top: calc(1.25%);
-    visibility: initial;
-}
-.more_vert i{
-    font-size: large;
-    margin: 5px;
-    margin-left: 15px;
-}
 .material-symbols-outlined {
   font-variation-settings:
-  'FILL' 1,
-  'wght' 500,
-  'GRAD' 200,
-  'opsz' 48
-}
-.material-symbols-rounded {
-  font-variation-settings:
-  'FILL' 1,
+  'FILL' 0,
   'wght' 400,
   'GRAD' 0,
   'opsz' 48
 }
+body{
+    background: #101010;
+}
 .load{
-    display: flex;
-    flex-direction: row;
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
     z-index: 999;
+    display: flex;
 }
 .loader{
-    width: 20px;
-    height: 50px;
+    width: 30px;
+    height: 80px;
     background: #fff;
-    border-radius: 2px;
-    margin-left: 15px;
-    animation: load 2.5s infinite;
+    margin-left: 20px;
+    border-radius: 3px;
+    animation: load infinite 1s;
 }
-@keyframes load {
-    25%{transform: scaleY(.5);}
-    50%{transform: scaleY(5);}
+@keyframes load{
+    0%{transform: scaleY(1.55);}
+    50%{transform: scaleY(1);}
+    100%{transform: scaleY(1.55);}
 }
 .loader:nth-child(1){
-    animation-delay: 0s;
+    animation-delay: 0.25s;
 }
 .loader:nth-child(2){
-    animation-delay: .25s;
+    animation-delay: 0s;
 }
 .loader:nth-child(3){
-    animation-delay: 0.5s;
+    animation-delay: 0.75s;
 }
-.ms{
-    position: absolute;
-    width: 20vw;
-    height: 200px;
-    top: 80%;
-    background: rgba(255, 255, 255, 0.1);
-}
-.ms img{
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    animation: spin infinite 5s;
-}
-@keyframes spin{
-    from{transform: rotate(0deg);}
-    to{transform: rotate(360deg);}
-}
-.sign{
-    position: absolute;
-    left: 90%;
-}
-.sign a{
-    color: #fff;
+/* Nav Bar */
+nav {
+    background-color: lightblue;
+    padding: 10px;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav li {
+    margin-right: 10px;
+  }
+  
+  nav a {
     text-decoration: none;
+    color: black;
+  }
+  
+  /* Popup */
+  .popup {
+    background-color: lightgray;
+    border: 1px solid gray;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0s linear 0.3s;
+  }
+  
+  .popup.show {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
+  }
+  
+  .popup .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  /* Container */
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: lightgray;
+  }
+  
+  #search-item {
+    padding: 5px;
+    border: none;
+  }
+  
+  /* Sign */
+  .sign a {
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: lightblue;
+    color: black;
+  }
+  
+  /* Type */
+  .type {
+    background-color: lightgray;
+    padding: 10px;
+  }
+  
+  .type ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .type li {
+    margin-right: 10px;
+  }
+  
+  .type button {
+    padding: 5px 10px;
+    border: none;
+    background-color: lightblue;
+    color: black;
+  }
+  
+  /* Audio Player */
+  #audio_player {
+    background-color: lightgray;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cnl {
+    margin-right: 10px;
+  }
+  
+  .btns button {
+    padding: 5px;
+    border: none;
+    background-color: lightblue;
+    color: black;
+  }
+  
+  /* Artist List */
+  .artist-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .card {
+    background-color: lightblue;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .card h2 {
+    margin-bottom: 5px;
+  }
+  
+  .card span {
+    display: block;
+  }
+  
+  .card span.more_vert,
+  .card span.icn {
+    display: none;
 }
-.sign a:hover{
-    transform: scale(1.05);
+#img{
+  border-radius: 50%;
 }
